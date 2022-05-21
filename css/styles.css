@@ -1,0 +1,130 @@
+/* primary-text-color #757575 */
+/* second text color #212121 */
+/* logo color1 #000000 */
+/* logo color2 #2196F3 */
+/* background #ffffff */
+/* second background #E5E5E5 */
+/* accent #2196F3 */
+/* color hero, color active button text #FFFFFF */
+
+/* Common styles */
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-backrground-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-studio-color: #000000;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.logo-web {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.logo-studio {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-studio-color);
+}
+
+.list {
+  list-style: none;
+}
+.link,
+.link-contacts {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  color: var(--secondary-text-color);
+}
+.link-contacts {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link-contacts:hover,
+.contacts .link-contacts:focus,
+.address .link-contacts:hover,
+.address .link-contacts:focus {
+  color: var(--accent-color);
+}
+
+.section-title,
+.advantages .title-advantages,
+.projects .project-title,
+.team-member {
+  color: var(--secondary-text-color);
+}
+
+.team {
+  background-color: var(--secondary-backrground-color);
+}
+
+.hero-title {
+  color: var(--primary-background-color);
+  background-color: var(--primary-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.team .team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.position {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-field {
+  font-size: 16px;
+  line-height: 30px;
+}
+/* Styles for Studio page */
