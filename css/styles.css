@@ -15,12 +15,12 @@
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
   --logo-studio-color: #000000;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
@@ -44,8 +44,7 @@ body {
 .list {
   list-style: none;
 }
-.link,
-.link-contacts {
+.link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -53,10 +52,30 @@ body {
   letter-spacing: 0.02em;
 }
 
+.address-only {
+  color: var(--primary-background-color);
+}
+
+.address {
+  font-style: inherit;
+  line-height: 1.71;
+  background-color: var(--primary-text-color);
+}
+
 .link {
   color: var(--secondary-text-color);
 }
 .link-contacts {
+  text-decoration: none;
+  line-height: 1.71;
+  color: var(--footer-link-color);
+}
+
+.contacts .link-contacts {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -74,6 +93,12 @@ body {
 .projects .project-title,
 .team-member {
   color: var(--secondary-text-color);
+}
+
+.title-advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .team {
@@ -105,16 +130,28 @@ body {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.main-button:hover,
+.main-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
 }
 
 .button {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.main-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
 .project-title {
@@ -127,4 +164,3 @@ body {
   font-size: 16px;
   line-height: 30px;
 }
-/* Styles for Studio page */
